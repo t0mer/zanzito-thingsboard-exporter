@@ -1,0 +1,4 @@
+devices:
+  - name: #Device friendly name
+    topic: #Device IP Address
+    access_token: #Accees token of the device in Thingsvoard
