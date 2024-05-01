@@ -1,0 +1,6 @@
+loguru
+schedule
+pyyaml
+pyaml
+requests
+paho-mqtt
