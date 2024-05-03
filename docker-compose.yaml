@@ -14,4 +14,4 @@ services:
       - MQTT_BROKER_USER=
       - MQTT_BROKER_PASSWORD=
     volumes:
-      - ./tasmota-tb/config:/app/config
+      - ./zanzito-thingsboard-exporter/config:/app/config
