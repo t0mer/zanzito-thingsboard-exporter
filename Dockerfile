@@ -15,8 +15,11 @@ RUN apt -yqq update && \
     rm -rf /var/lib/apt/lists/*
     
 RUN pip install --upgrade pip --no-cache-dir && \
-    pip install --upgrade setuptools --no-cache-dir && \
-    pip install --upgrade pyyaml requests loguru schedule
+    pip install --upgrade setuptools --no-cache-dir &&
+
+COPY requirements.txt /tmp
+
+RUN pip install -r /tmp/requirements.txt
 
 RUN mkdir -p /app/config
 
